@@ -1,1 +1,64 @@
-<p>tarefa-read works!</p>
+
+<div class="content">
+
+    <div class="title">
+        <h1>Tarefas</h1>
+    </div>
+
+    
+    <div class="mat-elevation-z8 content-table">
+        <table class="table" mat-table>
+      
+            <!-- Position Column -->
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef> ID </th>
+              <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="titulo">
+              <th mat-header-cell *matHeaderCellDef> TÍTULO </th>
+              <td mat-cell *matCellDef="let element"> {{element.titulo}} </td>
+            </ng-container>
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="descricao">
+              <th mat-header-cell *matHeaderCellDef> DESCRIÇÃO </th>
+              <td mat-cell *matCellDef="let element"> {{element.descricao}} </td>
+            </ng-container>
+          
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="responsavel">
+              <th mat-header-cell *matHeaderCellDef> RESPONSÁVEL </th>
+              <td mat-cell *matCellDef="let element"> {{element.responsavel}} </td>
+            </ng-container>
+    
+            <!-- Name Column 
+            <ng-container matColumnDef="prioridade">
+              <th mat-header-cell *matHeaderCellDef> PRIORIDADE </th>
+              <td mat-cell *matCellDef="let element"> {{element.prioridade}} </td>
+            </ng-container> -->
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="data">
+              <th mat-header-cell *matHeaderCellDef> DATA </th>
+              <td mat-cell *matCellDef="let element"> {{element.data}} </td>
+            </ng-container>
+          
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="acoes">
+              <th mat-header-cell *matHeaderCellDef> AÇÕES </th>
+              <td mat-cell *matCellDef="let element"> {{element.acoes}} </td>
+            </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+
+    </div>
+    
+      
+      
+</div>
+
+  

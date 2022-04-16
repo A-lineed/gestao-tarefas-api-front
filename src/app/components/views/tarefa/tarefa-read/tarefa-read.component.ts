@@ -11,5 +11,6 @@ export class TarefaReadComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  displayedColumns: string[] = ['id', 'titulo', 'descricao', 'responsavel', 'data', 'acoes'];
 }
