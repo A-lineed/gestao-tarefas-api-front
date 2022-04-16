@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Tarefa } from '../tarefa.model';
+import { TarefaService } from '../tarefa.service';
 
 @Component({
   selector: 'app-tarefa-read',
@@ -7,10 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TarefaReadComponent implements OnInit {
 
-  constructor() { }
+  tarefas: Tarefa[] = []
+
+  displayedColumns: string[] = ['id', 'titulo', 'descricao', 'responsavel', 'data', 'acoes'];
+
+  constructor(private service: TarefaService) { }
 
   ngOnInit(): void {
+    this.findAll();
+  }
+
+  findAll() {
+    this.service.findAll().subscribe(resposta => {
+      console.log(resposta);
+      this.tarefas = resposta;
+
+    })
   }
   
-  displayedColumns: string[] = ['id', 'titulo', 'descricao', 'responsavel', 'data', 'acoes'];
+  
 }
