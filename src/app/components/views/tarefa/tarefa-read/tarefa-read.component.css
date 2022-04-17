@@ -21,3 +21,21 @@ button {
 .table {
     width: 100%;
 }
+
+.descricao {
+    color: rgb(14, 15, 16);
+    margin-left: .9rem;
+}
+
+.edit {
+    color: rgb(206, 173, 24);
+}
+
+.delete {
+    color: rgb(228, 56, 56);
+    margin-left: .5rem;
+}
+
+.mat-header {
+    width: 5rem;
+}

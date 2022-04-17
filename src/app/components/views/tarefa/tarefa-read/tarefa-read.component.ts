@@ -11,7 +11,7 @@ export class TarefaReadComponent implements OnInit {
 
   tarefas: Tarefa[] = []
 
-  displayedColumns: string[] = ['id', 'titulo', 'descricao', 'responsavel', 'data', 'acoes'];
+  displayedColumns: string[] = ['id', 'titulo', 'responsavel', 'data','descricao', 'acoes'];
 
   constructor(private service: TarefaService) { }
 
