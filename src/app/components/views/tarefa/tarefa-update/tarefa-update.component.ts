@@ -12,7 +12,9 @@ export class TarefaUpdateComponent implements OnInit {
   tarefa: Tarefa = {
     titulo: '',
     responsavel: '',
-    descricao:''
+    descricao:'',
+    prioridade:'',
+    deadline:''
   };
 
   constructor(
@@ -31,6 +33,8 @@ export class TarefaUpdateComponent implements OnInit {
       this.tarefa.titulo = resposta.titulo;
       this.tarefa.responsavel = resposta.responsavel;
       this.tarefa.descricao = resposta.descricao;
+      this.tarefa.prioridade = resposta.prioridade;
+      this.tarefa.deadline = resposta.deadline;
     });
   }
 

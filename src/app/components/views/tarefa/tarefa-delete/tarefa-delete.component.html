@@ -3,15 +3,23 @@
 
     <mat-form-field class="form">
         <mat-label>Titulo</mat-label>
-        <input matInput [(ngModel)]="tarefa.titulo" type="text" name="titulo" placeholder="Ex. ComputaÃ§Ã£o">
+        <input matInput [(ngModel)]="tarefa.titulo" type="text" name="titulo" >
     </mat-form-field>
     <mat-form-field class="form">
-        <mat-label>Responsavel</mat-label>
-        <textarea matInput [(ngModel)]="tarefa.responsavel" type="text" name="responsavel" placeholder="Ex. Livros de ComputaÃ§Ã£o"></textarea>
+        <mat-label>Responsável</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.responsavel" type="text" name="responsavel" ></textarea>
     </mat-form-field>
     <mat-form-field class="form">
-        <mat-label>descricao</mat-label>
-        <textarea matInput [(ngModel)]="tarefa.descricao" type="text" name="descricao" placeholder="Ex. Livros de ComputaÃ§Ã£o"></textarea>
+        <mat-label>Descrição</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.descricao" type="text" name="descricao" ></textarea>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Prioridade</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.prioridade" type="text" name="prioridade" ></textarea>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Deadline</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.descricao" type="text" name="descricao" ></textarea>
     </mat-form-field>
 
     <div class="buttons">

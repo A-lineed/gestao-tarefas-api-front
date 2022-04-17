@@ -11,7 +11,7 @@ import { TarefaService } from "../tarefa.service";
 export class TarefaReadComponent implements OnInit {
 
   tarefa: Tarefa[] = [];
-  displayedColumns: string[] = ["id", "titulo", "responsavel", "descricao", "acoes"];
+  displayedColumns: string[] = ["id", "titulo", "responsavel", "descricao", "prioridade", "deadline", "acoes"];
 
   constructor(private service:TarefaService, private router: Router) {}
 

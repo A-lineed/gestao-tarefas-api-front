@@ -13,7 +13,9 @@ export class TarefaDeleteComponent implements OnInit {
   tarefa: Tarefa = {
     titulo: '',
     responsavel: '',
-    descricao:''
+    descricao:'',
+    prioridade:'',
+    deadline:''
   }
 
   constructor(private service: TarefaService, private route: ActivatedRoute, private router: Router) { }
@@ -28,6 +30,8 @@ export class TarefaDeleteComponent implements OnInit {
       this.tarefa.titulo = resposta.titulo
       this.tarefa.responsavel = resposta.responsavel
       this.tarefa.descricao = resposta.descricao
+      this.tarefa.prioridade = resposta.prioridade
+      this.tarefa.deadline = resposta.deadline
     })
   }
 

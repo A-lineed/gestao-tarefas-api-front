@@ -1,19 +1,28 @@
 <form>
-    <h1>CRIANDO NOVA TAREFA</h1>
+    <h1>CADASTRANDO NOVA TAREFA</h1>
 
     <mat-form-field class="form">
-        <mat-label>Titulo</mat-label>
-        <input matInput [(ngModel)]="tarefa.titulo" type="text" name="titulo" placeholder="Ex. ComputaÃ§Ã£o">
+        <mat-label>TÍTULO</mat-label>
+        <input matInput [(ngModel)]="tarefa.titulo" type="text" name="titulo" placeholder="Ex. Estudar Java">
     </mat-form-field>
     <mat-form-field class="form">
-        <mat-label>Responsavel</mat-label>
-        <textarea matInput [(ngModel)]="tarefa.responsavel" type="text" name="responsavel" placeholder="Ex. Livros de ComputaÃ§Ã£o"></textarea>
+        <mat-label>DESCRIÇÃO</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.descricao" type="text" name="descricao" placeholder="Ex. Módulo 2"></textarea>
     </mat-form-field>
     <mat-form-field class="form">
-        <mat-label>descricao</mat-label>
-        <textarea matInput [(ngModel)]="tarefa.descricao" type="text" name="descricao" placeholder="Ex. Livros de ComputaÃ§Ã£o"></textarea>
+        <mat-label>RESPONSÁVEL</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.responsavel" type="text" name="responsavel" placeholder="Ex. Aline"></textarea>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>PRIORIDADE</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.prioridade" type="text" name="prioridade" placeholder="Ex. Media"></textarea>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>DEADLINE</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.deadline" type="text" name="deadline" placeholder="Ex. 20/05/2000"></textarea>
     </mat-form-field>
 
+    
     <div class="buttons">
         <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="primary"> CADASTRAR TAREFA </button>
         <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>

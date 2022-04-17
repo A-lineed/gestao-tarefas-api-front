@@ -13,7 +13,9 @@ export class TarefaCreateComponent implements OnInit {
   tarefa: Tarefa = {
     titulo: '',
     responsavel: '',
-    descricao:''
+    descricao:'', 
+    prioridade: '',
+    deadline: ''
   }
 
   constructor(private service: TarefaService, private router: Router) { }
