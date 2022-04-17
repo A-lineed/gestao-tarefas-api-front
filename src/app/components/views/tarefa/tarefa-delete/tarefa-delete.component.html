@@ -1,1 +1,22 @@
-<p>tarefa-delete works!</p>
+<form>
+    <h1>DELETANDO TAREFA</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Titulo</mat-label>
+        <input matInput [(ngModel)]="tarefa.titulo" type="text" name="titulo" placeholder="Ex. ComputaÃ§Ã£o">
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Responsavel</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.responsavel" type="text" name="responsavel" placeholder="Ex. Livros de ComputaÃ§Ã£o"></textarea>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>descricao</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.descricao" type="text" name="descricao" placeholder="Ex. Livros de ComputaÃ§Ã£o"></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="delete()" class="mat-elevation-z8" mat-stroked-button color="primary"> DELETAR </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+    </div>
+
+</form>

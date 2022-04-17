@@ -22,9 +22,9 @@ button {
     width: 100%;
 }
 
-.descricao {
-    color: rgb(14, 15, 16);
-    margin-left: .9rem;
+.livros {
+    color: rgb(37, 125, 240);
+    margin-left: .6rem;
 }
 
 .edit {

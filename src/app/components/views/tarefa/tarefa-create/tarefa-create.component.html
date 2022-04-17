@@ -1,55 +1,22 @@
 <form>
-    <h1>CRIANDO UMA NOVA TAREFA</h1>
+    <h1>CRIANDO NOVA TAREFA</h1>
 
     <mat-form-field class="form">
-        <mat-label>Título</mat-label>
-        <input matInput  type="text" name="titulo" placeholder="Ex. Estudar BI">
+        <mat-label>Titulo</mat-label>
+        <input matInput [(ngModel)]="tarefa.titulo" type="text" name="titulo" placeholder="Ex. ComputaÃ§Ã£o">
     </mat-form-field>
-
     <mat-form-field class="form">
-        <mat-label>Descrição</mat-label>
-        <textarea matInput type="text" name="descricao" placeholder="Ex. Módulo 2"></textarea>
+        <mat-label>Responsavel</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.responsavel" type="text" name="responsavel" placeholder="Ex. Livros de ComputaÃ§Ã£o"></textarea>
     </mat-form-field>
-
-
     <mat-form-field class="form">
-        <p>
-            <mat-form-field appearance="legacy">
-              <mat-label>Responsável</mat-label>
-              <input matInput placeholder="Ex: Aline">
-              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-            </mat-form-field>
-          </p>
+        <mat-label>descricao</mat-label>
+        <textarea matInput [(ngModel)]="tarefa.descricao" type="text" name="descricao" placeholder="Ex. Livros de ComputaÃ§Ã£o"></textarea>
     </mat-form-field>
-
-    <mat-form-field class="form">
-        <p>
-            <mat-form-field appearance="legacy">
-              <mat-label>Prioridade</mat-label>
-              <input matInput placeholder="Ex: Aline">
-              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-            </mat-form-field>
-          </p>
-    </mat-form-field>
-
-    <mat-form-field class="form">
-        <p>
-            <mat-form-field appearance="legacy">
-              <mat-label>Deadline</mat-label>
-              <input matInput placeholder="Ex: 29/05/2000">
-              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-            </mat-form-field>
-          </p>
-    </mat-form-field>
-
-    
-    
-
-   
 
     <div class="buttons">
-        <button class="mat-elevation-z8" mat-stroked-button color="primary"> CRIAR </button>
-        <button class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+        <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="primary"> CADASTRAR TAREFA </button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
     </div>
 
 </form>
