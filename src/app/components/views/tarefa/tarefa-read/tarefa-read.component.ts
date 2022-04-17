@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Tarefa } from '../tarefa.model';
 import { TarefaService } from '../tarefa.service';
 
@@ -13,7 +14,7 @@ export class TarefaReadComponent implements OnInit {
 
   displayedColumns: string[] = ['id', 'titulo', 'responsavel', 'data','descricao', 'acoes'];
 
-  constructor(private service: TarefaService) { }
+  constructor(private service: TarefaService, private router: Router) { }
 
   ngOnInit(): void {
     this.findAll();
@@ -25,6 +26,9 @@ export class TarefaReadComponent implements OnInit {
       this.tarefas = resposta;
 
     })
+  }
+  navegarParaTarefaCreate() {
+    this.router.navigate(["tarefas/create"])
   }
   
   
