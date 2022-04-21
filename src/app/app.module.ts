@@ -27,6 +27,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { TarefaDeleteComponent } from './components/views/tarefa/tarefa-delete/tarefa-delete.component';
 import { TarefaUpdateComponent } from './components/views/tarefa/tarefa-update/tarefa-update.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { TarefaUpdateComponent } from './components/views/tarefa/tarefa-update/t
     MatFormFieldModule,
     MatSnackBarModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    MatSelectModule
   
   ],
   providers: [],

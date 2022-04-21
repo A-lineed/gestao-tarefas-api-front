@@ -1,6 +1,7 @@
 .content {
     width: 90%;
     margin: 1.4rem auto auto auto;
+
 }
 
 .title {
@@ -10,22 +11,25 @@
 
 .title h1 {
     font-size: 2rem;
-    color: rgb(212, 207, 207);
+    color: rgb(81, 77, 77);
     font-weight: 500;
 }
 
 button {
-    margin-bottom: .8rem;
+    
+    margin-bottom: 1.0rem;
+    color: rgb(61, 61, 61);
+}
+
+.botao{
+    text-align: center;
 }
 
 .table {
     width: 100%;
+    color: rgb(233, 79, 79);
 }
 
-.livros {
-    color: rgb(37, 125, 240);
-    margin-left: .6rem;
-}
 
 .edit {
     color: rgb(206, 173, 24);
@@ -38,4 +42,10 @@ button {
 
 .mat-header {
     width: 5rem;
+}
+.con{
+    text-align: center;
+    white-space: pre-wrap;
+    margin:  15px;
+
 }

@@ -1,13 +1,19 @@
 .container {
     height: 85%;
+    background-color: #fefefe;
+   
 }
 
 i {
     padding-right: .6rem;
+    color: #fefefe;
+   
 }
 
 .side {
     width: 12%;
+    background-color: #34434b
+    
 }
 
 mat-nav-list {
@@ -16,4 +22,8 @@ mat-nav-list {
 
 .nav {
     width: 50%;
+   
+}
+.title{
+    color: #fefefe;
 }
